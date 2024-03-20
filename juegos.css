@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;500;600;700;800&display=swap');
+*{
+    box_sizing: border-box;
+    margin: 0;
+
+}
+h1{
+    font-size: 3.5em;
+}
+h2{
+    font-size: 2.7em;
+}
+h3{
+    font-size: 2em;
+}
+
+p{
+    font_size: 3.2em;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    font-size: 1.25em;
+}
+@font-face{
+    font-family: 'MiFuente';
+    src: url(./Dune_Rise\ \(2\).ttf) format('truetype');
+}
+
+body {
+    font-family: "Saira Condensed", sans-serif;
+    margin: 0;
+    background-image: url(./fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color:white;
+    background-color:burlywood;
+
+}
+
+button:hover{
+    background-color: bisque;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{
+    color:#DAA849;
+}
+
+header{
+    background-color:#B9966E;
+    
+}
+
+header .logo{
+    font-family: 'MiFuente';
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color:black;
+    font-size: 3em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 1.6em;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+}
+
+header a:hover{
+    color:#F3D765;
+}
+
+
+#juego1 .container{
+    
+    text-align: center;
+    padding: 50px 12px;
+    margin: 0;
+}
+
+
+
+#juego2 .container{
+    
+    text-align: center;
+    padding: 50px 12px;
+    margin: 0;
+}
+
+
+#juego3 .container{
+    
+    text-align: center;
+    padding: 50px 12px;
+    margin: 0;
+}
+
+
+footer{
+    background-color:#DAA849;
+
+}
+
+footer p{
+    margin: 0;
+    color: black;
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media(min-width:720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+
+    #juego1 .container{
+        display:flex;
+        justify-content: space-evenly;
+        
+    }
+
+    #juego1 .texto1{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #juego1 h2{
+        margin-top: 0;
+        font-size: 4em;
+    }
+
+    #juego1 .img-container{
+        background-image:url("./dune1v.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #juego2 .container{
+        background-color: #471C09 ;
+        display:flex;
+        justify-content: space-evenly;
+        
+    }
+
+    #juego2 .texto2{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #juego2 h2{
+        margin-top: 0;
+        font-size: 4em;
+    }
+
+    #juego2 .img-container{
+        background-image:url("./dune2v.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #juego3 .container{
+        display:flex;
+        justify-content: space-evenly;
+        
+    }
+
+    #juego3 .texto3{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #juego3 h2{
+        margin-top: 0;
+        font-size: 4em;
+    }
+
+    #juego3 .img-container{
+        background-image:url("./dune2000.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
